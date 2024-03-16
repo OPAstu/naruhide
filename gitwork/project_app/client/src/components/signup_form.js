@@ -28,8 +28,8 @@ export default function SignUpscreen() {
     const handleSignUpButton = async () => {
         const check = await fb_signup(Email, Password);
         if (check) {
-            console.log("signup");
-        } else console.log("false");
+            navigation('/home');
+        } else navigation('/signup');
     };
 
     const handleLoginButton = () => {

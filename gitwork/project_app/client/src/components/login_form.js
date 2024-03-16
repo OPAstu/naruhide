@@ -29,8 +29,8 @@ export default function LoginScreen() {
         const check = await fb_login(Email, Password);
 
         if (check) {
-            console.log("login");
-        } else console.log("false");
+            navigation('/home');
+        } else navigation('/');
     };
 
     const handleSignUpButton = () => {

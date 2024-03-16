@@ -25,3 +25,6 @@ export async function fb_signup(Email, Password) {
         })
     });
 };
+
+export async function fb_db(Email) {
+}

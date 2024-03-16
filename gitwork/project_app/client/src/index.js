@@ -1,6 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import Login_page from './screens/login_page';
 import Pages from './screens/pages';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
