@@ -12,7 +12,7 @@ export async function fb_login(Email, Password) {
             resolve(false);
         })
     });
-};
+}
 
 export async function fb_signup(Email, Password) {
     return new Promise(resolve => {
@@ -24,7 +24,13 @@ export async function fb_signup(Email, Password) {
             resolve(false);
         })
     });
-};
+}
+
+export function fb_logincheck() {
+    if (!auth.currentUser) return false;
+    else if (!auth.currentUser.email) return false;
+    else return true;
+}
 
 export async function fb_db(Email) {
 }
