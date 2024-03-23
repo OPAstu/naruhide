@@ -2,6 +2,7 @@ import { BrowserRouter, Link, Route, Routes } from "react-router-dom";
 import SignUp_page from "./singup_page";
 import Login_page from "./login_page";
 import Home_page from "./home_page";
+import Room_page from "./room_page";
 
 export default function Pages() {
     return (
@@ -10,6 +11,7 @@ export default function Pages() {
                 <Route exact path='/' element={<Login_page />} />
                 <Route path='/signup' element={<SignUp_page />} />
                 <Route path='/home' element={<Home_page />} />
+                <Route path='/room' element={<Room_page />} />
             </Routes>
         </BrowserRouter>
     )
